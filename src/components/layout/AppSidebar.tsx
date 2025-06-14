@@ -23,6 +23,7 @@ import {
   MessageSquareMore
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { SidebarTrigger } from '@/components/ui/sidebar';
 
 const navItems = [
   { href: '/', label: 'דף הבית', icon: Home, public: true },
@@ -47,7 +48,10 @@ export default function AppSidebar() {
   return (
     <>
       <SidebarHeader className="p-4 border-b">
-        <span className="font-headline text-lg font-semibold text-sidebar-foreground">ניווט</span>
+        <div className="flex items-center justify-between">
+          <span className="font-headline text-lg font-semibold text-sidebar-foreground">ניווט</span>
+          <SidebarTrigger className="h-8 w-8" />
+        </div>
       </SidebarHeader>
       <SidebarContent className="p-2">
         <SidebarMenu>

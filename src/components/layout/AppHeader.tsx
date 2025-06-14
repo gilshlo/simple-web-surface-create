@@ -26,7 +26,6 @@ export default function AppHeader() {
               <Phone className="h-4 w-4 me-2" />
               <span className="font-medium">03-5167731</span>
             </Button>
-            <SidebarTrigger className="h-9 w-9 text-primary-foreground hover:bg-primary-foreground/15 transition-all duration-300 rounded-lg backdrop-blur-sm border border-primary-foreground/20 flex items-center justify-center" />
           </div>
         </div>
       </div>
