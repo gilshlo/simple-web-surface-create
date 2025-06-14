@@ -18,6 +18,7 @@ export default function AppHeader() {
           </div>
 
           <div className="flex items-center gap-3">
+            <SidebarTrigger className="text-primary-foreground hover:bg-primary-foreground/15 transition-all duration-300 rounded-lg backdrop-blur-sm border border-primary-foreground/20" />
             <Button variant="ghost" size="sm" className="text-primary-foreground hover:bg-primary-foreground/15 transition-all duration-300 rounded-lg backdrop-blur-sm border border-primary-foreground/20">
               <Globe className="h-4 w-4 me-2" />
               <span className="font-medium">עברית</span>
