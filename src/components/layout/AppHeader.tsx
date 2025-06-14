@@ -2,7 +2,7 @@ import Link from 'next/link';
 // Image import no longer needed here
 import { Button } from '@/components/ui/button';
 import { SidebarTrigger } from '@/components/ui/sidebar';
-import { UserCircle } from 'lucide-react';
+import { UserCircle, Globe, Phone } from 'lucide-react';
 
 export default function AppHeader() {
   return (
