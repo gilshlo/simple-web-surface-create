@@ -6,7 +6,7 @@ import { UserCircle, Globe, Phone } from 'lucide-react';
 
 export default function AppHeader() {
   return (
-    <header className="relative bg-gradient-to-r from-primary via-primary/95 to-accent text-primary-foreground shadow-lg">
+    <header className="relative z-50 bg-gradient-to-r from-primary via-primary/95 to-accent text-primary-foreground shadow-lg">
       {/* Decorative top bar */}
       <div className="h-1 bg-gradient-to-r from-accent via-primary to-accent"></div>
 
@@ -18,7 +18,7 @@ export default function AppHeader() {
           </div>
 
           <div className="flex items-center gap-3">
-            <SidebarTrigger className="text-primary-foreground hover:bg-primary-foreground/15 transition-all duration-300 rounded-lg backdrop-blur-sm border border-primary-foreground/20" />
+            <SidebarTrigger className="h-9 w-9 text-primary-foreground hover:bg-primary-foreground/15 transition-all duration-300 rounded-lg backdrop-blur-sm border border-primary-foreground/20 flex items-center justify-center" />
             <Button variant="ghost" size="sm" className="text-primary-foreground hover:bg-primary-foreground/15 transition-all duration-300 rounded-lg backdrop-blur-sm border border-primary-foreground/20">
               <Globe className="h-4 w-4 me-2" />
               <span className="font-medium">עברית</span>
