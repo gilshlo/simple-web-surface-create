@@ -20,38 +20,32 @@ export default function Home() {
   ];
 
   return (
-    <div className="space-y-12">
-      <section className="bg-card p-8 rounded-lg shadow-md">
-        <div className="grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary mb-4">
-              לשכת יועצי המס בישראל
+    <div className="space-y-16">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/10 to-primary/5 rounded-2xl"></div>
+        <div className="absolute inset-0" 
+             style={{backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.02'%3E%3Cpath d='M20 20c0 11.046-8.954 20-20 20s-20-8.954-20-20 8.954-20 20-20 20 8.954 20 20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`}}>
+        </div>
+
+        <div className="relative text-center py-20 px-6">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-5xl md:text-7xl font-bold font-headline text-primary mb-8 leading-tight">
+              ברוכים הבאים
+              <span className="block text-accent mt-2">לאתר הלשכה</span>
             </h1>
-            <p className="text-lg text-foreground mb-6">
-              הארגון המקצועי המוביל המייצג את יועצי המס והיועצות הפיננסיות בישראל. אנו פועלים לקידום מעמד המקצוע, מתן כלים מקצועיים לחברים, וייצוגם בפני רשויות המדינה.
+
+            <p className="text-xl md:text-2xl text-muted-foreground/80 mb-12 max-w-3xl mx-auto leading-relaxed">
+              לשכת יועצי המס בישראל - המקום המרכזי לכל המידע המקצועי, האירועים וההטבות עבור יועצי המס המוסמכים בישראל
             </p>
-            <div className="flex gap-3">
-              <Button asChild size="lg">
-                <Link href="/about">קראו עוד עלינו</Link>
+
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <Button size="lg" className="text-lg px-10 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-primary to-accent">
+                הצטרף ללשכה
               </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link href="/member-registration">הצטרפות ללשכה</Link>
+              <Button variant="outline" size="lg" className="text-lg px-10 py-4 rounded-xl border-2 border-accent/50 hover:border-accent hover:bg-accent/10 transition-all duration-300">
+                למד עוד
               </Button>
-            </div>
-          </div>
-          <div className="relative h-64 md:h-80 w-full rounded-lg overflow-hidden shadow-lg">
-            <Image 
-              src="https://placehold.co/600x400.png" 
-              alt="Tax professionals meeting" 
-              layout="fill" 
-              objectFit="cover"
-              data-ai-hint="professionals meeting" 
-            />
-            <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-              <PlayCircle className="w-16 h-16 text-white/80 hover:text-white transition-colors cursor-pointer" />
-            </div>
-            <div className="absolute bottom-0 start-0 p-4 bg-gradient-to-t from-black/50 to-transparent w-full">
-              <h3 className="text-white font-semibold text-lg">צפו: דבר נשיא הלשכה</h3>
             </div>
           </div>
         </div>
@@ -127,7 +121,7 @@ export default function Home() {
           </Button>
         </div>
       </section>
-      
+
       <section>
         <SectionTitle>
           <ExternalLink className="inline-block me-3 w-7 h-7" />

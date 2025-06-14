@@ -1,15 +1,25 @@
 import { cn } from "@/lib/utils";
 
 type SectionTitleProps = {
-  children: React.ReactNode;
+  title: string;
+  subtitle?: string;
   className?: string;
-  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 };
 
-export default function SectionTitle({ children, className, as: Component = 'h2' }: SectionTitleProps) {
+export default function SectionTitle({ title, subtitle, className }: SectionTitleProps) {
   return (
-    <Component className={cn("font-headline text-3xl font-semibold text-primary mb-6 pb-2 border-b-2 border-accent", className)}>
-      {children}
-    </Component>
+    <div className={cn("mb-12 text-center", className)}>
+      <div className="relative inline-block">
+        <h2 className="text-4xl font-bold font-headline text-primary mb-4 relative">
+          {title}
+          <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-accent via-accent/80 to-accent rounded-full"></div>
+        </h2>
+      </div>
+      {subtitle && (
+        <p className="text-lg text-muted-foreground/80 max-w-2xl mx-auto mt-6 leading-relaxed">
+          {subtitle}
+        </p>
+      )}
+    </div>
   );
 }
