@@ -4,7 +4,7 @@ import SectionTitle from '@/components/shared/SectionTitle';
 import PlaceholderCard from '@/components/shared/PlaceholderCard';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { PlayCircle, Newspaper, CalendarDays, Info, ExternalLink, Rss } from 'lucide-react';
+import { Icons } from '@/components/ui/icons';
 
 export default function Home() {
   const publications = [
@@ -53,7 +53,7 @@ export default function Home() {
 
       <section>
         <SectionTitle>
-          <Newspaper className="inline-block me-3 w-7 h-7" />
+          <Icons.newspaper className="inline-block me-3 w-7 h-7" />
           פרסומים אחרונים
         </SectionTitle>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -72,14 +72,14 @@ export default function Home() {
         </div>
         <div className="mt-6 text-center">
           <Button variant="outline" asChild>
-            <Link href="/content-library">לכל הפרסומים <Rss className="ms-2 h-4 w-4" /></Link>
+            <Link href="/content-library">לכל הפרסומים <Icons.rss className="ms-2 h-4 w-4" /></Link>
           </Button>
         </div>
       </section>
 
       <section>
         <SectionTitle>
-          <CalendarDays className="inline-block me-3 w-7 h-7" />
+          <Icons.calendar className="inline-block me-3 w-7 h-7" />
           אירועים קרובים
         </SectionTitle>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -109,7 +109,7 @@ export default function Home() {
 
       <section>
         <SectionTitle>
-          <Info className="inline-block me-3 w-7 h-7" />
+          <Icons.info className="inline-block me-3 w-7 h-7" />
           על הלשכה
         </SectionTitle>
         <div className="bg-card p-6 rounded-lg shadow-sm">
@@ -124,7 +124,7 @@ export default function Home() {
 
       <section>
         <SectionTitle>
-          <ExternalLink className="inline-block me-3 w-7 h-7" />
+          <Icons.externalLink className="inline-block me-3 w-7 h-7" />
           קישורים שימושיים
         </SectionTitle>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
