@@ -3,30 +3,35 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-size: 1.125rem; /* Increased base font size */
+  line-height: 1.75; /* Better line height for readability */
 }
 
 @layer base {
   :root {
     --background: 32 20% 95%; /* Light warm beige #F5F2ED */
-    --foreground: 30 15% 15%; /* Dark brown for text #2A2520 */
+    --foreground: 30 20% 12%; /* Darker brown for better contrast #211E18 */
     --card: 30 25% 98%; /* Warm white #FEFCF9 */
-    --card-foreground: 30 15% 15%;
+    --card-foreground: 30 20% 12%;
     --popover: 30 25% 98%;
-    --popover-foreground: 30 15% 15%;
-    --primary: 25 35% 25%; /* Rich dark brown #4A3B2A */
+    --popover-foreground: 30 20% 12%;
+    --primary: 25 40% 30%; /* Slightly lighter for better accessibility #5A4A36 */
     --primary-foreground: 30 25% 98%; /* Warm white */
     --secondary: 30 15% 90%; /* Light brown #E8E2D9 */
-    --secondary-foreground: 30 15% 15%;
+    --secondary-foreground: 30 20% 12%;
     --muted: 30 15% 90%;
-    --muted-foreground: 30 10% 45%;
-    --accent: 35 40% 50%; /* Warm medium brown #A08060 */
+    --muted-foreground: 30 15% 40%;
+    --accent: 35 45% 55%; /* More saturated for better CTAs #B8966A */
     --accent-foreground: 30 25% 98%; /* Warm white text on brown */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 30 15% 85%; /* Light brown border #DDD4C7 */
     --input: 30 15% 85%;
-    --ring: 25 35% 25%; /* Primary brown for ring */
+    --ring: 35 45% 55%; /* Accent brown for ring */
+    --success: 142 69% 58%; /* Green for success states */
+    --warning: 45 93% 47%; /* Orange for warnings */
+    --info: 217 91% 60%; /* Blue for informational states */
     --chart-1: 25 55% 45%; /* Brown chart colors */
     --chart-2: 35 45% 40%;
     --chart-3: 20 40% 35%;
